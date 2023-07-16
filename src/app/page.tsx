@@ -37,8 +37,12 @@ interface KafkaCluster {
   };
 }
 
+export const dynamic = "force-dynamic";
+
 async function getData(): Promise<KafkaClusterList> {
-  const res = await fetch("http://dp-kafka-rest/v3/clusters/");
+  const res = await fetch("http://dp-kafka-rest/v3/clusters/", {
+    cache: "no-store",
+  });
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
 
