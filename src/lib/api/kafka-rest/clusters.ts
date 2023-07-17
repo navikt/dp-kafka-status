@@ -37,7 +37,7 @@ interface KafkaCluster {
   };
 }
 
-export async function getKafkaClusters(): Promise<KafkaCluster[]> {
+export async function getClusters(): Promise<KafkaCluster[]> {
   const res = await fetch(`${process.env.KAFKA_REST_API}/v3/clusters/`);
   if (!res.ok) {
     throw new Error("Failed to fetch data");

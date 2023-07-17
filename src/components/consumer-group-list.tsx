@@ -8,10 +8,13 @@ interface ConsumerGroupListProps {
 
 function ConsumerGroupList({ consumerGroups }: ConsumerGroupListProps) {
   return (
-    <div>
-      {consumerGroups.map((consumerGroup, index) => (
-        <ConsumerGroup key={index} consumerGroup={consumerGroup} />
-      ))}
+    <div className="container mx-auto">
+      <h1 className="text-3xl font-bold mb-4">Consumer groups</h1>
+      <div className="space-y-4">
+        {consumerGroups.map((consumerGroup, index) => (
+          <ConsumerGroup key={index} consumerGroup={consumerGroup} />
+        ))}
+      </div>
     </div>
   );
 }
