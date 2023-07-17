@@ -10,6 +10,8 @@ import {
 } from "@/lib/api/kafka-rest/consumer-groups";
 import { TopicList } from "@/components/topic-list";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   const clusters = await getKafkaClusters();
   const topics = await getTopics(getFirstClisterId(clusters));
