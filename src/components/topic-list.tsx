@@ -1,4 +1,4 @@
-import { KafkaTopic } from "@/lib/api/kafka-rest/topics";
+import type { KafkaTopic } from "@/lib/api/kafka-rest/topics";
 
 export function TopicList({ topics }: { topics: KafkaTopic[] }) {
   return (

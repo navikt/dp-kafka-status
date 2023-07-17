@@ -1,6 +1,6 @@
 import React from "react";
 import ConsumerGroup from "@/components/consumer-group";
-import { ConsumerGroupData } from "@/lib/api/kafka-rest/fetch";
+import type { ConsumerGroupData } from "@/lib/api/kafka-rest/consumer-groups";
 
 interface ConsumerGroupListProps {
   consumerGroups: ConsumerGroupData[];
