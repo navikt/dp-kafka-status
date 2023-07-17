@@ -11,11 +11,11 @@ spec:
   prometheus:
     enabled: false
   liveness:
-    path: /internal/isalive
+    path: /api/internal/isalive
   readiness:
-    path: /internal/isready
+    path: /api/internal/isready
   startup:
-    path: /internal/isready
+    path: /api/internal/isready
   replicas:
     min: 1
     max: 1
