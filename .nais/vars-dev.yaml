@@ -1,2 +1,4 @@
 kafka:
   pool: nav-dev
+ingresses:
+  - https://dp-kafka-status.intern.dev.nav.no
