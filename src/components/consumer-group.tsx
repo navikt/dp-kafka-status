@@ -1,5 +1,5 @@
 import React from "react";
-import { ConsumerGroupData } from "@/components/consumer-group-list";
+import { ConsumerGroupData } from "@/lib/api/kafka-rest/consumer-groups";
 
 interface ConsumerGroupProps {
   consumerGroup: ConsumerGroupData;
